@@ -1,0 +1,26 @@
+{
+  "name": "mernboilerplate",
+  "version": "1.0.0",
+  "description": "Basic Structuring of a MERN Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "nodemon server/app.js",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "author": "Tarun Juyal",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.20",
+    "nodemailer": "^6.4.10"
+  }
+}
